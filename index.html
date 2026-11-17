@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rent a Car 24/7 যশোর</title>
+<title>Rent a Car 24-7 Jashore</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -352,7 +352,7 @@ ${[['দৈনিক ভাড়া','Daily rental','বডি রেন্ট 
 <section class="alt"><div class="wrap grid g2"><img src="${IMG.couple}" alt="${L('আরামদায়ক যাত্রা','Comfortable ride')}" style="border-radius:10px;width:100%"><img src="${IMG.van}" alt="${L('গ্রুপ ট্রিপ','Group trip')}" style="border-radius:10px;width:100%"></div></section>`,
 
 about:()=>head(L('আমাদের সম্পর্কে','About us'))+`<section style="padding-top:24px"><div class="wrap split">
- <div><p class="lead" style="margin-top:0">${L('Rent a Car 24/7 যশোরভিত্তিক কার রেন্টাল সার্ভিস। আমরা যশোর, ঢাকা, খুলনা ও সাতক্ষীরায় ড্রাইভারসহ গাড়ি ভাড়া দিই, দিনরাত ২৪ ঘণ্টা।','Rent a Car 24/7 is a Jashore-based car rental service. We rent cars with drivers across Jashore, Dhaka, Khulna and Satkhira, around the clock.')}</p>
+ <div><p class="lead" style="margin-top:0">${L('Rent a Car 24-7 যশোরভিত্তিক কার রেন্টাল সার্ভিস। আমরা যশোর, ঢাকা, খুলনা ও সাতক্ষীরায় ড্রাইভারসহ গাড়ি ভাড়া দিই, দিনরাত ২৪ ঘণ্টা।','Rent a Car 24-7 is a Jashore-based car rental service. We rent cars with drivers across Jashore, Dhaka, Khulna and Satkhira, around the clock.')}</p>
  <ul class="pts"><li><b>${L('স্বচ্ছ রেট','Clear rates')}</b>${L('বডি রেন্ট, কিমি রেট ও ফুল ট্যাংক অপশন আগেই জানানো হয়।','Body rent, per-km rate and the full-tank option are shared upfront.')}</li><li><b>${L('বাংলা ও ইংরেজি','Bengali and English')}</b>${L('দুই ভাষায় বুকিং ও যোগাযোগ।','Booking and support in both languages.')}</li></ul>
  <div class="cta" style="margin-top:20px"><a class="btn" href="#/contact">${L('যোগাযোগ করুন','Contact us')}</a></div></div>
  <img src="${IMG.key}" alt="${L('গাড়ি হস্তান্তর','Car handover')}"></div></section>
@@ -381,11 +381,11 @@ contact:()=>head(L('যোগাযোগ','Contact'),L('২৪ ঘণ্টা 
 
 /* ---------- shell ---------- */
 function shell(route,body){
- return `<header><div class="wrap bar"><a class="logo" href="#/">Rent a Car <b>24/7</b> ${L('যশোর','Jashore')}</a>
+ return `<header><div class="wrap bar"><a class="logo" href="#/">Rent a Car <b>24-7</b> Jashore</a>
  <nav id="nav" aria-label="Main">${NAV.map(n=>`<a href="#/${n[0]}" class="${route===n[0]?'on':''}">${L(n[1],n[2])}</a>`).join('')}</nav>
  <div class="tools"><a class="btn sm" href="#/booking">${L('বুক করুন','Book now')}</a><div class="lang" role="group" aria-label="Language"><button type="button" data-l="bn" aria-pressed="${lang==='bn'}">বাংলা</button><button type="button" data-l="en" aria-pressed="${lang==='en'}">EN</button></div><button class="burger" id="bg" aria-label="Menu" aria-expanded="false">☰</button></div></div></header>
  <main>${body}</main>
- <footer><div class="wrap fg"><div><h3>Rent a Car 24/7 ${L('যশোর','Jashore')}</h3><p>${L('যশোরভিত্তিক কার রেন্টাল, সেবা এলাকা ঢাকা, খুলনা ও সাতক্ষীরা। ২৪ ঘণ্টা খোলা।','Car rental in Jashore, serving Dhaka, Khulna and Satkhira. Open 24 hours.')}</p></div>
+ <footer><div class="wrap fg"><div><h3>Rent a Car 24-7 Jashore</h3><p>${L('যশোরভিত্তিক কার রেন্টাল, সেবা এলাকা ঢাকা, খুলনা ও সাতক্ষীরা। ২৪ ঘণ্টা খোলা।','Car rental in Jashore, serving Dhaka, Khulna and Satkhira. Open 24 hours.')}</p></div>
  <div><h3>${L('পেজ','Pages')}</h3>${NAV.slice(0,4).map(n=>`<a href="#/${n[0]}">${L(n[1],n[2])}</a>`).join('')}</div>
  <div><h3>${L('যোগাযোগ','Contact')}</h3><a href="tel:+8801XXXXXXXXX">${PHONE}</a><a href="#/booking">${L('অনলাইনে বুক করুন','Book online')}</a><a href="#/faq">${L('প্রশ্নোত্তর','FAQ')}</a></div></div>
  <div class="wrap copy">${L('ডিজাইন প্রিভিউ। ফোন, ঠিকানা ও ছবি নমুনা।','Design preview. Phone, address and photos are placeholders.')}</div></footer>
@@ -402,7 +402,7 @@ function render(keepScroll){
  const body=route==='vehicle'?PAGES.vehicle(arg):PAGES[route](q);
  document.getElementById('app').innerHTML=shell(route==='vehicle'?'vehicles':route,body);
  document.documentElement.lang=lang;
- document.title='Rent a Car 24/7 '+L('যশোর','Jashore');
+ document.title='Rent a Car 24-7 Jashore';
  if(!keepScroll)window.scrollTo(0,0);
  bind(route);
 }
