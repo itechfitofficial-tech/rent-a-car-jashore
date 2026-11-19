@@ -499,13 +499,13 @@ confirmation:()=>{
 
 tours:()=>head(L('ট্যুর প্যাকেজ','Tour packages'),L('যশোর থেকে গ্রুপ ট্যুর: ড্রাইভারসহ, দিনের হিসাবে প্যাকেজ।','Group tours from Jashore: with a driver, packaged by days.'))+`
 <section style="padding-top:28px"><div class="wrap"><div class="grid g4">${TOURS.map(destCard).join('')}</div>
-<p class="note">${L('সিলেট ও জাফলংসহ অন্য গন্তব্যের রেটের জন্য কল করুন বা বুকিং রিকোয়েস্ট পাঠান। ছবিগুলো আমাদের ট্যুরের ছবি দিয়ে বদলানো হবে।','Call or send a booking request for Sylhet, Jaflong and other destinations. These tiles will be replaced with photos from our trips.')}</p></div></section>
+<p class="note">${L('সিলেট ও জাফলংসহ অন্য গন্তব্যের রেটের জন্য কল করুন বা বুকিং রিকোয়েস্ট পাঠান।','Call or send a booking request for Sylhet, Jaflong and other destinations.')}</p></div></section>
 ${TOURS.filter(t=>t.rows.length).map(tourTable).join('')}
 <section><div class="wrap"><div class="band"><div><h2>${L('নিজের মতো ট্যুর প্ল্যান করুন','Plan your own tour')}</h2><p>${L('গন্তব্য ও দিন জানান, আমরা গাড়ি ও রেট নিশ্চিত করব।','Tell us the destination and days and we will confirm the car and rate.')}</p></div><div class="cta"><a class="btn" href="#/booking?tt=6">${L('ট্যুর বুক করুন','Book a tour')}</a><a class="btn line" href="${WA}">WhatsApp</a></div></div></div></section>`,
 
 wedding:()=>head(L('বিয়ে ও অনুষ্ঠান','Weddings and events'),L('বরের গাড়ি সাজানো থেকে বরযাত্রীর গাড়ি, সবই ড্রাইভারসহ।','From a decorated groom car to baraat vehicles, all with a driver.'))+`
 <section style="padding-top:28px"><div class="wrap"><div class="grid g3">${[1,2,3,4,5,6].map(i=>`<div><div class="slotbox">${slot('wed'+i,'wedding',L('বরের গাড়ি সাজানো','Decorated groom car'))}</div><p class="m" style="min-height:0;margin-top:8px">${L('বরের গাড়ি সাজানো','Decorated groom car')} ${fmt(i)}</p></div>`).join('')}</div>
-<p class="note">${L('ছবিগুলো আমাদের সাজানো গাড়ির ছবি দিয়ে বদলানো হবে।','These tiles will be replaced with photos of our decorated cars.')}</p></div></section>
+</div></section>
 <section><div class="wrap"><span class="kick">${L('সার্ভিস','Service')}</span><h2>${L('বিয়ের জন্য যা পাবেন','What you get for a wedding')}</h2>
 <div class="feat" style="margin-top:22px">${[['heart','বরের গাড়ি সাজানো','Decorated groom car','বিয়ের জন্য সাজানো গাড়ি।','A car decorated for the wedding.'],['group','বরযাত্রীর গাড়ি','Baraat vehicles','৭ থেকে ১৮ সিটের গাড়ি।','7 to 18 seat vehicles.'],['user','ড্রাইভারসহ','With driver','অভিজ্ঞ ড্রাইভারসহ ভাড়া।','Rented with an experienced driver.']].map(f=>`<div class="ft">${ico(f[0])}<div><h3>${L(f[1],f[2])}</h3><p>${L(f[3],f[4])}</p></div></div>`).join('')}</div>
 <p class="note">${L('রেটের জন্য কল করুন বা বুকিং রিকোয়েস্ট পাঠান, গাড়ির সংখ্যা ও তারিখ অনুযায়ী রেট নিশ্চিত করা হবে।','Call or send a booking request. We confirm the rate by number of cars and date.')}</p>
